@@ -19,7 +19,7 @@ local Main = Instance.new("TextButton")
 --Properties:
 
 Expoitai.Name = "Expoitai"
-Expoitai.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Expoitai.Parent = game.CoreGui
 Expoitai.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Framework.Name = "Framework"

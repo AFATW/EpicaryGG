@@ -1,222 +1,263 @@
--- Gui to Lua
--- Version: 3.2
 
--- Instances:
+--Converted with ttyyuu12345's model to script plugin v4
+function sandbox(var,func)
+	local env = getfenv(func)
+	local newenv = setmetatable({},{
+		__index = function(self,k)
+			if k=="script" then
+				return var
+			else
+				return env[k]
+			end
+		end,
+	})
+	setfenv(func,newenv)
+	return func
+end
+cors = {}
+mas = Instance.new("Model",game:GetService("Lighting"))
+ScreenGui0 = Instance.new("ScreenGui")
+Frame1 = Instance.new("Frame")
+ScrollingFrame2 = Instance.new("ScrollingFrame")
+TextButton3 = Instance.new("TextButton")
+LocalScript4 = Instance.new("LocalScript")
+TextButton5 = Instance.new("TextButton")
+LocalScript6 = Instance.new("LocalScript")
+TextButton7 = Instance.new("TextButton")
+LocalScript8 = Instance.new("LocalScript")
+TextButton9 = Instance.new("TextButton")
+LocalScript10 = Instance.new("LocalScript")
+TextButton11 = Instance.new("TextButton")
+LocalScript12 = Instance.new("LocalScript")
+TextButton13 = Instance.new("TextButton")
+TextLabel14 = Instance.new("TextLabel")
+UIAspectRatioConstraint15 = Instance.new("UIAspectRatioConstraint")
+LocalScript16 = Instance.new("LocalScript")
+TextButton17 = Instance.new("TextButton")
+LocalScript18 = Instance.new("LocalScript")
+ScreenGui0.Name = "Expoitai"
+ScreenGui0.Parent = game.CoreGui
+ScreenGui0.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Frame1.Name = "Framework"
+Frame1.Parent = ScreenGui0
+Frame1.Position = UDim2.new(0.127516776, 0, 0.245962709, 0)
+Frame1.Size = UDim2.new(0.1875, 0, 0.506224096, 0)
+Frame1.Active = true
+Frame1.BackgroundColor = BrickColor.new("Lime green")
+Frame1.BackgroundColor3 = Color3.new(0, 0.788235, 0.0235294)
+Frame1.BorderColor = BrickColor.new("Really black")
+Frame1.BorderColor3 = Color3.new(0, 0, 0)
+Frame1.BorderSizePixel = 0
+ScrollingFrame2.Name = "Scroll"
+ScrollingFrame2.Parent = Frame1
+ScrollingFrame2.Position = UDim2.new(0, 0, 0.158469945, 0)
+ScrollingFrame2.Size = UDim2.new(1, 0, 0.841530025, 0)
+ScrollingFrame2.Active = true
+ScrollingFrame2.BackgroundColor = BrickColor.new("Institutional white")
+ScrollingFrame2.BackgroundColor3 = Color3.new(1, 1, 1)
+ScrollingFrame2.BackgroundTransparency = 1
+ScrollingFrame2.BorderColor = BrickColor.new("Really black")
+ScrollingFrame2.BorderColor3 = Color3.new(0, 0, 0)
+ScrollingFrame2.BorderSizePixel = 0
+TextButton3.Name = "MM2 ESP"
+TextButton3.Parent = ScrollingFrame2
+TextButton3.Position = UDim2.new(0.0829794109, 0, 0.0198803898, 0)
+TextButton3.Size = UDim2.new(0.25, 0, 0.0845634788, 0)
+TextButton3.BackgroundColor = BrickColor.new("Forest green")
+TextButton3.BackgroundColor3 = Color3.new(0.0313726, 0.513726, 0)
+TextButton3.BorderColor = BrickColor.new("Really black")
+TextButton3.BorderColor3 = Color3.new(0, 0, 0)
+TextButton3.BorderSizePixel = 0
+TextButton3.Font = Enum.Font.SourceSans
+TextButton3.FontSize = Enum.FontSize.Size14
+TextButton3.Text = "MM2 ESP"
+TextButton3.TextColor = BrickColor.new("Really black")
+TextButton3.TextColor3 = Color3.new(0, 0, 0)
+TextButton3.TextSize = 14
+TextButton3.TextWrap = true
+TextButton3.TextWrapped = true
+LocalScript4.Parent = TextButton3
+table.insert(cors,sandbox(LocalScript4,function()
+script.Parent.Parent.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/Releases/main/MurderMystery2HighlightESP"))(' Watermelon ?')
+	game.Workspace.sound:play()
+end)
+end))
+TextButton5.Name = "IY"
+TextButton5.Parent = ScrollingFrame2
+TextButton5.Position = UDim2.new(0.373478353, 0, 0.0214822125, 0)
+TextButton5.Size = UDim2.new(0.25, 0, 0.0838948935, 0)
+TextButton5.BackgroundColor = BrickColor.new("Forest green")
+TextButton5.BackgroundColor3 = Color3.new(0.0313726, 0.513726, 0)
+TextButton5.BorderColor = BrickColor.new("Really black")
+TextButton5.BorderColor3 = Color3.new(0, 0, 0)
+TextButton5.BorderSizePixel = 0
+TextButton5.Font = Enum.Font.SourceSans
+TextButton5.FontSize = Enum.FontSize.Size14
+TextButton5.Text = "IY"
+TextButton5.TextColor = BrickColor.new("Really black")
+TextButton5.TextColor3 = Color3.new(0, 0, 0)
+TextButton5.TextSize = 14
+TextButton5.TextWrap = true
+TextButton5.TextWrapped = true
+LocalScript6.Parent = TextButton5
+table.insert(cors,sandbox(LocalScript6,function()
+script.Parent.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+	game.Workspace.sound:Play()
+end)
+end))
+TextButton7.Name = "Hitbox"
+TextButton7.Parent = ScrollingFrame2
+TextButton7.Position = UDim2.new(0.662478328, 0, 0.0205232538, 0)
+TextButton7.Size = UDim2.new(0.25, 0, 0.0822368264, 0)
+TextButton7.BackgroundColor = BrickColor.new("Forest green")
+TextButton7.BackgroundColor3 = Color3.new(0.0313726, 0.513726, 0)
+TextButton7.BorderColor = BrickColor.new("Really black")
+TextButton7.BorderColor3 = Color3.new(0, 0, 0)
+TextButton7.BorderSizePixel = 0
+TextButton7.Font = Enum.Font.SourceSans
+TextButton7.FontSize = Enum.FontSize.Size14
+TextButton7.Text = "Hitbox"
+TextButton7.TextColor = BrickColor.new("Really black")
+TextButton7.TextColor3 = Color3.new(0, 0, 0)
+TextButton7.TextSize = 14
+TextButton7.TextWrap = true
+TextButton7.TextWrapped = true
+LocalScript8.Parent = TextButton7
+table.insert(cors,sandbox(LocalScript8,function()
+script.Parent.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+	game.Workspace.sound:Play()
+end)
+end))
+TextButton9.Name = "ChatBypasser"
+TextButton9.Parent = ScrollingFrame2
+TextButton9.Position = UDim2.new(0.0830228627, 0, 0.118130453, 0)
+TextButton9.Size = UDim2.new(0.25, 0, 0.0838948935, 0)
+TextButton9.BackgroundColor = BrickColor.new("Forest green")
+TextButton9.BackgroundColor3 = Color3.new(0.0313726, 0.513726, 0)
+TextButton9.BorderColor = BrickColor.new("Really black")
+TextButton9.BorderColor3 = Color3.new(0, 0, 0)
+TextButton9.BorderSizePixel = 0
+TextButton9.Font = Enum.Font.SourceSans
+TextButton9.FontSize = Enum.FontSize.Size14
+TextButton9.Text = "Chat Bypasser"
+TextButton9.TextColor = BrickColor.new("Really black")
+TextButton9.TextColor3 = Color3.new(0, 0, 0)
+TextButton9.TextSize = 14
+TextButton9.TextWrap = true
+TextButton9.TextWrapped = true
+LocalScript10.Parent = TextButton9
+table.insert(cors,sandbox(LocalScript10,function()
+script.Parent.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ChainGotStucked/a55af82d82574/main/REAL_MENACE"))()
+	game.Workspace.sound:Play()
+end)
+end))
+TextButton11.Name = "LALOL"
+TextButton11.Parent = ScrollingFrame2
+TextButton11.Position = UDim2.new(0.373478353, 0, 0.11907535, 0)
+TextButton11.Size = UDim2.new(0.25, 0, 0.0838948935, 0)
+TextButton11.BackgroundColor = BrickColor.new("Forest green")
+TextButton11.BackgroundColor3 = Color3.new(0.0313726, 0.513726, 0)
+TextButton11.BorderColor = BrickColor.new("Really black")
+TextButton11.BorderColor3 = Color3.new(0, 0, 0)
+TextButton11.BorderSizePixel = 0
+TextButton11.Font = Enum.Font.SourceSans
+TextButton11.FontSize = Enum.FontSize.Size14
+TextButton11.Text = "LALOL Backdoor"
+TextButton11.TextColor = BrickColor.new("Really black")
+TextButton11.TextColor3 = Color3.new(0, 0, 0)
+TextButton11.TextSize = 14
+TextButton11.TextWrap = true
+TextButton11.TextWrapped = true
+LocalScript12.Parent = TextButton11
+table.insert(cors,sandbox(LocalScript12,function()
+script.Parent.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Its-LALOL/LALOL-Hub/main/Backdoor-Scanner/script'))()
+	game.Workspace.sound:Play()
+end)
+end))
+TextButton13.Name = "Empty"
+TextButton13.Parent = ScrollingFrame2
+TextButton13.Position = UDim2.new(0.662478328, 0, 0.121991426, 0)
+TextButton13.Size = UDim2.new(0.25, 0, 0.0807848647, 0)
+TextButton13.BackgroundColor = BrickColor.new("Forest green")
+TextButton13.BackgroundColor3 = Color3.new(0.0313726, 0.513726, 0)
+TextButton13.BorderColor = BrickColor.new("Really black")
+TextButton13.BorderColor3 = Color3.new(0, 0, 0)
+TextButton13.BorderSizePixel = 0
+TextButton13.Font = Enum.Font.SourceSans
+TextButton13.FontSize = Enum.FontSize.Size14
+TextButton13.Text = "Empty"
+TextButton13.TextColor = BrickColor.new("Really black")
+TextButton13.TextColor3 = Color3.new(0, 0, 0)
+TextButton13.TextSize = 14
+TextLabel14.Name = "Title"
+TextLabel14.Parent = Frame1
+TextLabel14.Position = UDim2.new(0.13537553, 0, -0.00035482939, 0)
+TextLabel14.Size = UDim2.new(0.724637687, 0, 0.111776978, 0)
+TextLabel14.BackgroundColor = BrickColor.new("Forest green")
+TextLabel14.BackgroundColor3 = Color3.new(0.0313726, 0.454902, 0)
+TextLabel14.BorderColor = BrickColor.new("Really black")
+TextLabel14.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel14.BorderSizePixel = 0
+TextLabel14.Font = Enum.Font.SourceSans
+TextLabel14.FontSize = Enum.FontSize.Size14
+TextLabel14.Text = "Nifekat Ui"
+TextLabel14.TextColor = BrickColor.new("Really black")
+TextLabel14.TextColor3 = Color3.new(0, 0, 0)
+TextLabel14.TextScaled = true
+TextLabel14.TextSize = 14
+TextLabel14.TextWrap = true
+TextLabel14.TextWrapped = true
+UIAspectRatioConstraint15.Parent = TextLabel14
+UIAspectRatioConstraint15.AspectRatio = 3.9999992847442627
+LocalScript16.Parent = Frame1
+table.insert(cors,sandbox(LocalScript16,function()
+script.Parent.Draggable = true
+end))
+TextButton17.Name = "Main"
+TextButton17.Parent = ScreenGui0
+TextButton17.Position = UDim2.new(0.0129076084, 0, 0.456431538, 0)
+TextButton17.Size = UDim2.new(0.082201086, 0, 0.0871369392, 0)
+TextButton17.BackgroundColor = BrickColor.new("Forest green")
+TextButton17.BackgroundColor3 = Color3.new(0.0431373, 0.537255, 0)
+TextButton17.BackgroundTransparency = 0.6000000238418579
+TextButton17.BorderColor = BrickColor.new("Really black")
+TextButton17.BorderColor3 = Color3.new(0, 0, 0)
+TextButton17.BorderSizePixel = 0
+TextButton17.Font = Enum.Font.Highway
+TextButton17.FontSize = Enum.FontSize.Size14
+TextButton17.Text = "Open"
+TextButton17.TextColor = BrickColor.new("Really black")
+TextButton17.TextColor3 = Color3.new(0, 0, 0)
+TextButton17.TextScaled = true
+TextButton17.TextSize = 14
+TextButton17.TextWrap = true
+TextButton17.TextWrapped = true
+LocalScript18.Parent = TextButton17
+table.insert(cors,sandbox(LocalScript18,function()
+script.Parent.Draggable = true
 
-local Expoitai = Instance.new("ScreenGui")
-local Framework = Instance.new("Frame")
-local Scroll = Instance.new("ScrollingFrame")
-local MM2ESP = Instance.new("TextButton")
-local IY = Instance.new("TextButton")
-local Hitbox = Instance.new("TextButton")
-local ChatBypasser = Instance.new("TextButton")
-local LALOL = Instance.new("TextButton")
-local Empty = Instance.new("TextButton")
-local Title = Instance.new("TextLabel")
-local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
-local Main = Instance.new("TextButton")
-
---Properties:
-
-Expoitai.Name = "Expoitai"
-Expoitai.Parent = game.CoreGui
-Expoitai.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-Framework.Name = "Framework"
-Framework.Parent = Expoitai
-Framework.Active = true
-Framework.BackgroundColor3 = Color3.fromRGB(0, 201, 6)
-Framework.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Framework.BorderSizePixel = 0
-Framework.Position = UDim2.new(0.168530941, 0, 0.177639753, 0)
-Framework.Size = UDim2.new(0.1875, 0, 0.506224096, 0)
-Framework.Visible = false
-
-Scroll.Name = "Scroll"
-Scroll.Parent = Framework
-Scroll.Active = true
-Scroll.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Scroll.BackgroundTransparency = 1.000
-Scroll.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Scroll.BorderSizePixel = 0
-Scroll.Position = UDim2.new(0, 0, 0.158469945, 0)
-Scroll.Size = UDim2.new(1, 0, 0.841530025, 0)
-
-MM2ESP.Name = "MM2 ESP"
-MM2ESP.Parent = Scroll
-MM2ESP.BackgroundColor3 = Color3.fromRGB(8, 131, 0)
-MM2ESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
-MM2ESP.BorderSizePixel = 0
-MM2ESP.Position = UDim2.new(0.0829794109, 0, 0.0198803898, 0)
-MM2ESP.Size = UDim2.new(0.25, 0, 0.0845634788, 0)
-MM2ESP.Font = Enum.Font.SourceSans
-MM2ESP.Text = "MM2 ESP"
-MM2ESP.TextColor3 = Color3.fromRGB(0, 0, 0)
-MM2ESP.TextSize = 14.000
-MM2ESP.TextWrapped = true
-
-IY.Name = "IY"
-IY.Parent = Scroll
-IY.BackgroundColor3 = Color3.fromRGB(8, 131, 0)
-IY.BorderColor3 = Color3.fromRGB(0, 0, 0)
-IY.BorderSizePixel = 0
-IY.Position = UDim2.new(0.373478353, 0, 0.0214822125, 0)
-IY.Size = UDim2.new(0.25, 0, 0.0838948935, 0)
-IY.Font = Enum.Font.SourceSans
-IY.Text = "IY"
-IY.TextColor3 = Color3.fromRGB(0, 0, 0)
-IY.TextSize = 14.000
-IY.TextWrapped = true
-
-Hitbox.Name = "Hitbox"
-Hitbox.Parent = Scroll
-Hitbox.BackgroundColor3 = Color3.fromRGB(8, 131, 0)
-Hitbox.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Hitbox.BorderSizePixel = 0
-Hitbox.Position = UDim2.new(0.662478328, 0, 0.0205232538, 0)
-Hitbox.Size = UDim2.new(0.25, 0, 0.0822368264, 0)
-Hitbox.Font = Enum.Font.SourceSans
-Hitbox.Text = "Hitbox"
-Hitbox.TextColor3 = Color3.fromRGB(0, 0, 0)
-Hitbox.TextSize = 14.000
-Hitbox.TextWrapped = true
-
-ChatBypasser.Name = "ChatBypasser"
-ChatBypasser.Parent = Scroll
-ChatBypasser.BackgroundColor3 = Color3.fromRGB(8, 131, 0)
-ChatBypasser.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ChatBypasser.BorderSizePixel = 0
-ChatBypasser.Position = UDim2.new(0.0830228627, 0, 0.118130453, 0)
-ChatBypasser.Size = UDim2.new(0.25, 0, 0.0838948935, 0)
-ChatBypasser.Font = Enum.Font.SourceSans
-ChatBypasser.Text = "Chat Bypasser"
-ChatBypasser.TextColor3 = Color3.fromRGB(0, 0, 0)
-ChatBypasser.TextSize = 14.000
-ChatBypasser.TextWrapped = true
-
-LALOL.Name = "LALOL"
-LALOL.Parent = Scroll
-LALOL.BackgroundColor3 = Color3.fromRGB(8, 131, 0)
-LALOL.BorderColor3 = Color3.fromRGB(0, 0, 0)
-LALOL.BorderSizePixel = 0
-LALOL.Position = UDim2.new(0.373478353, 0, 0.11907535, 0)
-LALOL.Size = UDim2.new(0.25, 0, 0.0838948935, 0)
-LALOL.Font = Enum.Font.SourceSans
-LALOL.Text = "LALOL Backdoor"
-LALOL.TextColor3 = Color3.fromRGB(0, 0, 0)
-LALOL.TextSize = 14.000
-LALOL.TextWrapped = true
-
-Empty.Name = "Empty"
-Empty.Parent = Scroll
-Empty.BackgroundColor3 = Color3.fromRGB(8, 131, 0)
-Empty.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Empty.BorderSizePixel = 0
-Empty.Position = UDim2.new(0.662478328, 0, 0.121991426, 0)
-Empty.Size = UDim2.new(0.25, 0, 0.0807848647, 0)
-Empty.Font = Enum.Font.SourceSans
-Empty.Text = "Empty"
-Empty.TextColor3 = Color3.fromRGB(0, 0, 0)
-Empty.TextSize = 14.000
-
-Title.Name = "Title"
-Title.Parent = Framework
-Title.BackgroundColor3 = Color3.fromRGB(8, 116, 0)
-Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Title.BorderSizePixel = 0
-Title.Position = UDim2.new(0.13537553, 0, -0.00035482939, 0)
-Title.Size = UDim2.new(0.724637687, 0, 0.111776978, 0)
-Title.Font = Enum.Font.SourceSans
-Title.Text = "Nifekat Ui"
-Title.TextColor3 = Color3.fromRGB(0, 0, 0)
-Title.TextScaled = true
-Title.TextSize = 14.000
-Title.TextWrapped = true
-
-UIAspectRatioConstraint.Parent = Title
-UIAspectRatioConstraint.AspectRatio = 4.000
-
-Main.Name = "Main"
-Main.Parent = Expoitai
-Main.BackgroundColor3 = Color3.fromRGB(11, 137, 0)
-Main.BackgroundTransparency = 0.600
-Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.0129076084, 0, 0.456431538, 0)
-Main.Size = UDim2.new(0.082201086, 0, 0.0871369392, 0)
-Main.Font = Enum.Font.Highway
-Main.Text = "Open"
-Main.TextColor3 = Color3.fromRGB(0, 0, 0)
-Main.TextScaled = true
-Main.TextSize = 14.000
-Main.TextWrapped = true
-
--- Scripts:
-
-local function HCVWGIX_fake_script() -- MM2ESP.LocalScript 
-	local script = Instance.new('LocalScript', MM2ESP)
-
-	script.Parent.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/Releases/main/MurderMystery2HighlightESP"))(' Watermelon ?')
-		game.Workspace.sound:play()
+script.Parent.MouseButton1Click:Connect(function()
+	if script.Parent.Parent.Framework.Visible == false then
+		script.Parent.Parent.Framework.Visible = true
+		script.Parent.Text = "Close"
+	else
+		script.Parent.Parent.Framework.Visible = false
+		script.Parent.Text = "Open"
+	end
+end)
+end))
+for i,v in pairs(mas:GetChildren()) do
+	v.Parent = script
+	pcall(function() v:MakeJoints() end)
+end
+mas:Destroy()
+for i,v in pairs(cors) do
+	spawn(function()
+		pcall(v)
 	end)
 end
-coroutine.wrap(HCVWGIX_fake_script)()
-local function JZSPTCS_fake_script() -- IY.LocalScript 
-	local script = Instance.new('LocalScript', IY)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
-		game.Workspace.sound:Play()
-	end)
-end
-coroutine.wrap(JZSPTCS_fake_script)()
-local function QKLIP_fake_script() -- Hitbox.LocalScript 
-	local script = Instance.new('LocalScript', Hitbox)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
-		game.Workspace.sound:Play()
-	end)
-end
-coroutine.wrap(QKLIP_fake_script)()
-local function RWNXPO_fake_script() -- ChatBypasser.LocalScript 
-	local script = Instance.new('LocalScript', ChatBypasser)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ChainGotStucked/a55af82d82574/main/REAL_MENACE"))()
-		game.Workspace.sound:Play()
-	end)
-end
-coroutine.wrap(RWNXPO_fake_script)()
-local function TYGDT_fake_script() -- LALOL.LocalScript 
-	local script = Instance.new('LocalScript', LALOL)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/Its-LALOL/LALOL-Hub/main/Backdoor-Scanner/script'))()
-		game.Workspace.sound:Play()
-	end)
-end
-coroutine.wrap(TYGDT_fake_script)()
-local function AUMUDVO_fake_script() -- Framework.LocalScript 
-	local script = Instance.new('LocalScript', Framework)
-
-	script.Parent.Draggable = true
-end
-coroutine.wrap(AUMUDVO_fake_script)()
-local function BLTMEXT_fake_script() -- Main.LocalScript 
-	local script = Instance.new('LocalScript', Main)
-
-	script.Parent.Draggable = true
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		if script.Parent.Parent.Framework.Visible == false then
-			script.Parent.Parent.Framework.Visible = true
-			script.Parent.Text = "Close"
-		else
-			script.Parent.Parent.Framework.Visible = false
-			script.Parent.Text = "Open"
-		end
-	end)
-end
-coroutine.wrap(BLTMEXT_fake_script)()

@@ -153,7 +153,7 @@ Main.TextWrapped = true
 
 -- Scripts:
 
-local function ZLBBAM_fake_script() -- MM2ESP.LocalScript 
+local function HCVWGIX_fake_script() -- MM2ESP.LocalScript 
 	local script = Instance.new('LocalScript', MM2ESP)
 
 	script.Parent.Parent.MouseButton1Click:Connect(function()
@@ -161,8 +161,8 @@ local function ZLBBAM_fake_script() -- MM2ESP.LocalScript
 		game.Workspace.sound:play()
 	end)
 end
-coroutine.wrap(ZLBBAM_fake_script)()
-local function KDMZ_fake_script() -- IY.LocalScript 
+coroutine.wrap(HCVWGIX_fake_script)()
+local function JZSPTCS_fake_script() -- IY.LocalScript 
 	local script = Instance.new('LocalScript', IY)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -170,8 +170,8 @@ local function KDMZ_fake_script() -- IY.LocalScript
 		game.Workspace.sound:Play()
 	end)
 end
-coroutine.wrap(KDMZ_fake_script)()
-local function JQUEF_fake_script() -- Hitbox.LocalScript 
+coroutine.wrap(JZSPTCS_fake_script)()
+local function QKLIP_fake_script() -- Hitbox.LocalScript 
 	local script = Instance.new('LocalScript', Hitbox)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -179,8 +179,8 @@ local function JQUEF_fake_script() -- Hitbox.LocalScript
 		game.Workspace.sound:Play()
 	end)
 end
-coroutine.wrap(JQUEF_fake_script)()
-local function ZUBZ_fake_script() -- ChatBypasser.LocalScript 
+coroutine.wrap(QKLIP_fake_script)()
+local function RWNXPO_fake_script() -- ChatBypasser.LocalScript 
 	local script = Instance.new('LocalScript', ChatBypasser)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -188,8 +188,8 @@ local function ZUBZ_fake_script() -- ChatBypasser.LocalScript
 		game.Workspace.sound:Play()
 	end)
 end
-coroutine.wrap(ZUBZ_fake_script)()
-local function AFLW_fake_script() -- LALOL.LocalScript 
+coroutine.wrap(RWNXPO_fake_script)()
+local function TYGDT_fake_script() -- LALOL.LocalScript 
 	local script = Instance.new('LocalScript', LALOL)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -197,14 +197,14 @@ local function AFLW_fake_script() -- LALOL.LocalScript
 		game.Workspace.sound:Play()
 	end)
 end
-coroutine.wrap(AFLW_fake_script)()
-local function RZRGSB_fake_script() -- Framework.LocalScript 
+coroutine.wrap(TYGDT_fake_script)()
+local function AUMUDVO_fake_script() -- Framework.LocalScript 
 	local script = Instance.new('LocalScript', Framework)
 
 	script.Parent.Draggable = true
 end
-coroutine.wrap(RZRGSB_fake_script)()
-local function FVZINL_fake_script() -- Main.LocalScript 
+coroutine.wrap(AUMUDVO_fake_script)()
+local function BLTMEXT_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	script.Parent.Draggable = true
@@ -219,4 +219,4 @@ local function FVZINL_fake_script() -- Main.LocalScript
 		end
 	end)
 end
-coroutine.wrap(FVZINL_fake_script)()
+coroutine.wrap(BLTMEXT_fake_script)()
